@@ -6,7 +6,7 @@ const TimesbrList = () => {
   const [Times, setTimes] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:19003/times/')
+    axios.get('http://127.0.0.1:19000/times/')
       .then(response => {
         setTimes(response.data);
       })
